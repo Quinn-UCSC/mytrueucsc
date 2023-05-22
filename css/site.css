@@ -1,1 +1,75 @@
 /* Edits for the whole website. */
+
+/*   Automated
+*    Slideshow
+*    CSS
+*    Section
+*/
+
+/* Apply border-box box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Align images vertically in the middle */
+img {
+    vertical-align: middle;
+    width: 100%
+}
+
+/* Slideshow container */
+.image-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+/* Caption text for slideshow */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade; /* Specifies the animation to use */
+    animation-duration: 1.5s; /* Duration of the animation */
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} /* Starting state of the animation */
+    to {opacity: 1} /* Ending state of the animation */
+  }
+
+  /* Styles for the arrow elements */
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* Styles for the left arrow */
+#arrow-left {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 20px;
+}
+
+/* Styles for the right arrow */
+#arrow-right {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 20px;
+}

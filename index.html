@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- This title is used for tabs and bookmarks -->
+<title>🎉🎉Welcome!🎉🎉</title> <!-- Edit this later. -->
+
+<!-- Use UTF character set, a good idea with any webpage -->
+<meta charset="UTF-8" />
+<!-- Set viewport so page remains consistently scaled w narrow devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Include a sitewide CSS file for consistent styling across the site -->
+<link rel="stylesheet" type="text/css" href="css/site.css">
+<!-- Lab-specifc CSS file for any special styling of this particular page -->
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
+
+<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+<script src="site.js">defer</script>
+</head>
+<body>
+
+    <!-- Container for the image slideshow -->
+    <div class="image-slideshow">
+        <!-- Left arrow div -->
+        <div id="arrow-left" class="arrow"></div>
+        <!-- First image container -->
+        <div class="image-fade">
+            <img src="https://mario.wiki.gallery/images/a/a2/Whale_PM.png" alt="Paper Mario Whale">
+            <div class="text">Caption 1 Text</div>
+        </div>        
+    
+        <!-- Second image container -->
+        <div class="image-fade">
+            <img src="https://static.wikia.nocookie.net/drawntolife/images/5/54/Turtle_Rock.jpg/revision/latest?cb=20151103123952" alt="Turtle_Rock">
+            <div class="text">Caption 2 Text</div>
+        </div>        
+    
+        <!-- Third image container -->
+        <div class="image-fade">
+            <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/fc/SSBU_Moon_Render.png/revision/latest?cb=20180809001335" alt="Zelda Moon">
+            <div class="text">Caption 3 Text</div>
+        </div>
+        
+        <!-- Right arrow div -->
+        <div id="arrow-right" class="arrow"></div>
+    </div>
+    
+</body>
+</html>
