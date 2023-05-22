@@ -1,1 +1,53 @@
 /* Edits for only the homepage */
+body {
+    display: block;
+    padding: 10px;
+}
+
+.welcome-sign {
+    border: 10px black solid;
+    text-align: center;
+}
+
+.image-fade {
+    border: 10px black solid;
+    background-color: gray;
+}
+
+.img-slide {
+    height: 400px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    background-color: rgb(0, 0, 0, 0.5);
+    margin-bottom: 10%;
+    width: 99%;
+    font-size: 40px;
+}
+
+.links {
+    border: 10px black solid;
+    text-align: center;
+}
+
+ul#list li {
+    font-size: 20px;
+    word-spacing: 20px;
+    display: inline;
+}
+
+.news {
+    border: 10px black solid;
+    text-align: center;
+}
+
+.pages {
+    border: 10px black solid;
+    text-align: center;
+    padding: 40px;
+    word-spacing: 20px;
+}
