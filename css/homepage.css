@@ -51,3 +51,11 @@ ul#list li {
     padding: 40px;
     word-spacing: 20px;
 }
+
+.twitter-timeline {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 30px;
+}
