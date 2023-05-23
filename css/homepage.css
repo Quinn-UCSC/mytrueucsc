@@ -53,9 +53,10 @@ ul#list li {
 }
 
 .twitter-timeline {
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  padding: 30px;
+  padding-bottom: 30px;
+  font-style: italic;
 }
