@@ -4,6 +4,10 @@ body {
     padding: 10px;
 }
 
+.logo {
+    width: 1in;
+  }
+
 .welcome-sign {
     border: 10px black solid;
     text-align: center;
