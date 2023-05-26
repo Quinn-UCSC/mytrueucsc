@@ -1,6 +1,8 @@
 /* Edits for only the homepage */
 body {
     display: block;
+    border: 10px blue;
+    background-image: linear-gradient(to bottom right, rgb(158, 168, 244), rgb(233, 233, 170));
     padding: 10px;
 }
 
@@ -9,13 +11,16 @@ body {
   }
 
 .welcome-sign {
-    border: 10px black solid;
+    border: 10px rgb(224, 170, 53) solid;
+    background-color: #0B3C6B;
+    color: gold;
+    font-family: "Times New Roman", Times, serif;
     text-align: center;
 }
 
 .image-fade {
-    border: 10px black solid;
-    background-color: gray;
+    border: 10px rgb(224, 170, 53) solid;
+    background-color: #0B3C6B;
 }
 
 .img-slide {
@@ -27,14 +32,20 @@ body {
 }
 
 .text {
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: #80808075;
     margin-bottom: 10%;
     width: 99%;
     font-size: 40px;
+    color: gold;
+    font-family: "Times New Roman", Times, serif;
+    
 }
 
 .links {
-    border: 10px black solid;
+    border: 10px rgb(224, 170, 53) solid;
+    background-color: #0B3C6B;
+    color: gold;
+    font-family: "Times New Roman", Times, serif;
     text-align: center;
 }
 
@@ -45,12 +56,16 @@ ul#list li {
 }
 
 .news {
-    border: 10px black solid;
+    border: 10px rgb(224, 170, 53) solid;
     text-align: center;
+    color: gold;
+    font-family: "Times New Roman", Times, serif;
+    background-image: conic-gradient(#0B3C6B, gold, #0B3C6B, #0B3C6B);
 }
 
 .pages {
-    border: 10px black solid;
+    border: 10px rgb(224, 170, 53) solid;
+    background-color: #0B3C6B;
     text-align: center;
     padding: 40px;
     word-spacing: 20px;
