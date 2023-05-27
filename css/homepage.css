@@ -66,21 +66,22 @@ ul#list li {
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
-    background-image: conic-gradient(#0B3C6B, gold, #0B3C6B, #0B3C6B);
+    background-image: conic-gradient(#0B3C6B, #0B3C6B, gold, #0B3C6B);
 }
 
 .tab-section {
     border: 10px rgb(224, 170, 53) solid;
+    border-width: medium;
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
-    background-color: #0B3C6B;
+    background-image: conic-gradient(#0B3C6B, gold, #0B3C6B, #0B3C6B);
 }
 
 .pages {
     border: 10px rgb(224, 170, 53) solid;
     border-width: medium;
-    background-color: #0B3C6B;
+    background-image: linear-gradient(gold, #0B3C6B, #0B3C6B);
     text-align: center;
     padding: 40px;
     word-spacing: 20px;
