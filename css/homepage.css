@@ -63,6 +63,14 @@ ul#list li {
     background-image: conic-gradient(#0B3C6B, gold, #0B3C6B, #0B3C6B);
 }
 
+.tab {
+    border: 10px rgb(224, 170, 53) solid;
+    text-align: center;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #0B3C6B;
+}
+
 .pages {
     border: 10px rgb(224, 170, 53) solid;
     background-color: #0B3C6B;
@@ -78,4 +86,13 @@ ul#list li {
   width: 40%;
   padding-bottom: 30px;
   font-style: italic;
+}
+
+.indent {
+    display: flex;
+}
+
+.indent section {
+    flex: 1;
+    margin-right: 20px;
 }
