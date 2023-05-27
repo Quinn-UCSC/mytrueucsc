@@ -12,8 +12,8 @@ body {
   }
 
 .welcome-sign {
-    border: 10px rgb(224, 170, 53) solid;
-    border-width: medium;
+    border: 10px rgb(224, 170, 53) ridge;
+    border-radius: 15px;
     background-color: #0B3C6B;
     color: gold;
     font-family: "Times New Roman", Times, serif;
@@ -21,9 +21,14 @@ body {
 }
 
 .image-fade {
-    border: 10px rgb(224, 170, 53) solid;
-    border-width: medium;
+    border: 10px rgb(224, 170, 53) ridge;
+    border-radius: 15px;
     background-color: #0B3C6B;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    transform: scale(1.5);
 }
 
 .img-slide {
@@ -41,12 +46,11 @@ body {
     font-size: 40px;
     color: gold;
     font-family: "Times New Roman", Times, serif;
-    
 }
 
 .links {
-    border: 10px rgb(224, 170, 53) solid;
-    border-width: medium;
+    border: 10px rgb(224, 170, 53) ridge;
+    border-radius: 15px;
     background-color: #0B3C6B;
     color: gold;
     font-family: "Times New Roman", Times, serif;
@@ -55,14 +59,27 @@ body {
 
 ul#list li {
     font-size: 20px;
-    padding-left: 20px;
     display: inline;
+    padding: 10px;
+}
+
+ul li:hover {
+    cursor: pointer;
+    color: #fef077;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fef077,
+        0 0 82px #fef077,
+        0 0 92px #fef077,
+        0 0 102px #bdb037,
+        0 0 151px #bdb037;
 }
 
 .news {
-    border: 10px rgb(224, 170, 53) solid;
-    border-width: medium;
-    border-width: medium;
+    border: 10px rgb(224, 170, 53) ridge;
+    border-radius: 15px;
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
@@ -70,8 +87,8 @@ ul#list li {
 }
 
 .tab-content {
-    border: 10px rgb(224, 170, 53) solid;
-    border-width: medium;
+    border: 10px rgb(224, 170, 53) ridge;
+    border-radius: 15px;
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
@@ -79,8 +96,8 @@ ul#list li {
 }
 
 .pages {
-    border: 10px rgb(224, 170, 53) solid;
-    border-width: medium;
+    border: 10px rgb(224, 170, 53) ridge;
+    border-radius: 15px;
     background-image: linear-gradient(gold, #0B3C6B, #0B3C6B);
     text-align: center;
     padding: 40px;
