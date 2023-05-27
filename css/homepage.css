@@ -63,10 +63,10 @@ ul#list li {
     background-image: conic-gradient(#0B3C6B, gold, #0B3C6B, #0B3C6B);
 }
 
-.tab {
+.tab-section {
     border: 10px rgb(224, 170, 53) solid;
     text-align: center;
-    color: white;
+    color: gold;
     font-family: "Times New Roman", Times, serif;
     background-color: #0B3C6B;
 }
