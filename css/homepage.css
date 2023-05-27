@@ -2,6 +2,7 @@
 body {
     display: block;
     border: 10px blue;
+    border-width: medium;
     background-image: linear-gradient(to bottom right, rgb(158, 168, 244), rgb(233, 233, 170));
     padding: 10px;
 }
@@ -12,6 +13,7 @@ body {
 
 .welcome-sign {
     border: 10px rgb(224, 170, 53) solid;
+    border-width: medium;
     background-color: #0B3C6B;
     color: gold;
     font-family: "Times New Roman", Times, serif;
@@ -20,6 +22,7 @@ body {
 
 .image-fade {
     border: 10px rgb(224, 170, 53) solid;
+    border-width: medium;
     background-color: #0B3C6B;
 }
 
@@ -43,6 +46,7 @@ body {
 
 .links {
     border: 10px rgb(224, 170, 53) solid;
+    border-width: medium;
     background-color: #0B3C6B;
     color: gold;
     font-family: "Times New Roman", Times, serif;
@@ -57,6 +61,8 @@ ul#list li {
 
 .news {
     border: 10px rgb(224, 170, 53) solid;
+    border-width: medium;
+    border-width: medium;
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
@@ -65,6 +71,7 @@ ul#list li {
 
 .pages {
     border: 10px rgb(224, 170, 53) solid;
+    border-width: medium;
     background-color: #0B3C6B;
     text-align: center;
     padding: 40px;
