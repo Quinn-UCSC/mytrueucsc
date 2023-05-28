@@ -19,14 +19,21 @@ img {
 
 #banana-slug {
   float: right;
-  width: 1in;
+  margin-left: 10px;
+  width: 1.5in;
 }
+
+#banana-slug img {
+  width: 100%;
+  height: auto;
+} 
 
 /* Slideshow container */
 .image-slideshow {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   }
 
 /* Caption text for slideshow */
@@ -34,12 +41,12 @@ img {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
+} 
 
 /* Fading animation */
 .fade {
