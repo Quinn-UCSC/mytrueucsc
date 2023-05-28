@@ -147,3 +147,29 @@ table {
     thead {
     background-color: #dedddd;
     }
+
+/*In progress*/
+.inner-section-box {
+    border: 5px solid gold;
+    padding: 10px;
+    background-color: #0B3C6B;
+    width: 600px;
+    align-content: center;
+}
+
+.inner-section-box img{
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; 
+  }
+  
+  .photo-grid img {
+    width: 100%;
+    height: auto;
+  }
+  
