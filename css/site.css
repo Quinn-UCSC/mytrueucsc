@@ -17,6 +17,11 @@ img {
     width: 100%
 }
 
+#banana-slug {
+  float: right;
+  width: 1in;
+}
+
 /* Slideshow container */
 .image-slideshow {
     max-width: 1000px;
@@ -73,3 +78,4 @@ img {
     right: 0;
     margin-right: 20px;
 }
+
