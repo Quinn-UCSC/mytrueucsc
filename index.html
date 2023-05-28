@@ -103,8 +103,10 @@
                 <!-- Tab content for the fourth tab -->
                 <div class="tab-pane" data-tabcontent="tab4">
                     <h1>UCSC Party Page</h1>
-                    <p><span class="italic">Please check out our UCSC party's page on Instagram.</span></p>
-                    <div id="includedContent"></div>                 
+                    <p><span class="italic">Please check out our UCSC party's page on Instagram.</span></p> <!-- Using font-style: italic for the paragraph introducing the instagram timeline. -->
+                    <!-- Creating a div to include content from party.html so that the page doesn't lag locally on the homepage whenever the programmers debug -->
+                    <div id="includedContent"></div>
+                    <!-- Creating script to load content from party.html -->
                     <script>
                         // Use window.onload event
                         window.onload = function() {
@@ -130,31 +132,46 @@
                 <!-- Tab content for the eighth tab --> 
                 <div class="tab-pane" data-tabcontent="tab8">
                     <h1>External Links:</h1>
-
-                    <table>
-                        <thead>
-                          <tr>
-                            <th>Link</th>
-                            <th>Description</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                      <tr>
-                        <td class = "italic"><a href = "https://slugsuccess.ucsc.edu/">Slug Success</a></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td class = "italic">Link #2</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td class = "italic">Link #3</td>
-                        <td></td>
-                      </tr>
-                        </tbody>
-                    </table>
-                    
-                </div>
+                    <div class="column"> <!-- Start of the column for item #1 container -->
+                        <!-- Item #1 -->
+                        <!-- Opening anchor tag to use image as a link-->
+                        <a href="https://www.ucsc.edu/" class="image-link">
+                            <img src="https://arts.ucsc.edu/sites/default/files/ucsc%20sign.jpg" alt="UCSC Welcome Board"> <!-- Image element with the image source and alt text -->
+                        </a> <!-- Closing anchor tag -->
+                        <div class="separator"></div> <!-- Vertical line separator -->
+                        <div> <!-- Start of the right-side content container -->
+                            <h2>UCSC Site</h2> <!-- Heading element for the title -->
+                            <p>UC Santa Cruz is a public university like no other in California, combining the intimacy of a small, liberal arts 
+                                college with the depth and rigor of a major research university.</p> <!-- Paragraph element for the description -->
+                        </div> <!-- End of the right-side content container -->
+                    </div> <!-- End of the column container -->
+                    <div class="column"> <!-- Start of the column for item #2 container -->
+                        <!-- Item #2 -->
+                        <!-- Opening anchor tag to use image as a link-->
+                        <a href="https://slugsuccess.ucsc.edu/" class="image-link">
+                            <img src="https://www.nicepng.com/png/detail/72-723775_slug-success-ucsc-slug-transparent.png" alt="Slug Success Logo"> <!-- Image element with the image source and alt text -->
+                        </a> <!-- Closing anchor tag -->
+                        <div class="separator"></div> <!-- Vertical line separator -->
+                        <div> <!-- Start of the right-side content container -->
+                            <h2>Slug Success</h2> <!-- Heading element for the title -->
+                            <p>Slug Success is a web-based tool used to help staff schedule, coordinate, target, 
+                                and report on advising and other student success services on the UCSC campus.</p> <!-- Paragraph element for the description -->
+                        </div> <!-- End of the right-side content container -->
+                    </div> <!-- End of the column container -->
+                    <div class="column"> <!-- Start of the column for item #3 container -->
+                        <!-- Item #3 -->
+                        <!-- Opening anchor tag to use image as a link-->
+                        <a href="https://my.ucsc.edu/" class="image-link">
+                            <img src="https://www.math.ucsc.edu/undergraduate/advising-resources-tools-forms/ap-score-verification-step-2.png" 
+                            alt="Image of MyUCSC portal"> <!-- Image element with the image source and alt text -->
+                        </a> <!-- Closing anchor tag -->
+                        <div class="separator"></div> <!-- Vertical line separator -->
+                        <div> <!-- Start of the right-side content container -->
+                            <h2>MyUCSC Portal</h2> <!-- Heading element for the title -->
+                            <p>MyUCSC is the university's online academic information systems portal and it is used by students to enroll in classes, check grades, view financial aid and billing accounts, 
+                                and update their personal information.</p> <!-- Paragraph element for the description -->
+                        </div> <!-- End of the right-side content container -->
+                    </div> <!-- End of the column container -->
                 </section>
 
          <!-- Section 2 --> 
@@ -162,6 +179,7 @@
         <div class="news">
             <h1>Insert News</h1>
             <!-- <a href = "./twitter-test/index.html">Click here for tweets</a> -->
+            <!-- Showcases a twitter timeline consisting of UCSC accounts posting news about current UCSC events and clubs. -->
             <a class="twitter-timeline" data-width="500" data-height="500" data-dnt="true" data-theme="dark" 
             href="https://twitter.com/migquinn2023/lists/1660842677284524032?ref_src=twsrc%5Etfw">Please wait for the timeline to load...</a> 
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
@@ -169,6 +187,7 @@
         </section>
     </section>
         <br>
+        <!-- A section with buttons in a div named "pages" -->
         <div class="pages">
             <button id="slug-meet">Slug Meet</button>
             <button id="concert">Concerts</button>
@@ -176,6 +195,5 @@
             <button id="parties">Party Forums/Ads</button>
         </div>
     </div>  
-    
 </body>
 </html>

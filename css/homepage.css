@@ -126,24 +126,35 @@ ul li:hover {
     font-style: italic;
 }
 
-.tab-pane a {
-    color: white;
-}
+.column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: center; /* Center the column horizontally */
+    padding: 10px; /* Add padding to create some space */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
 
-/* Styles for the table */
-table {
-    border-collapse: collapse;
-    width: 100%;
-    background-color: #f2f2f2;
-    }
-    
-    /* Styles for table header cells and table data cells */
-    th, td {
-    border: 1px solid #000;
-    padding: 8px;
-    }
-    
-    /* Styles for the table header row */
-    thead {
-    background-color: #dedddd;
-    }
+  .column img {
+    width: 200px; /* Set the maximum width of the image */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    margin-right: 20px; /* Adjust the spacing between the image and description */
+  }
+
+  .separator {
+    width: 2px; /* Adjust the width of the separator line */
+    height: 50px; /* Adjust the height of the separator line */
+    background-color: #ccc; /* Adjust the color of the separator line */
+    margin-right: 20px; /* Adjust the spacing between the separator line and the title/description */
+  }
+
+  .description {
+    padding-left: 20px;
+    font-size: 16px; /* Set an initial font size */
+    overflow: hidden; /* Hide overflowing text */
+  }
+  
+  .image-link {
+    display: inline-block; /* Ensures the link takes up only as much space as the image */
+}
