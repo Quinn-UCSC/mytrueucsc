@@ -106,9 +106,10 @@
                     <p><span class="italic">Please check out our UCSC party's page on Instagram.</span></p>
                     <div id="includedContent"></div>                 
                     <script>
-                        $(document).ready(function() {
-                          $("#includedContent").load("./party.html #output");
-                        });
+                        // Use window.onload event
+                        window.onload = function() {
+                            $("#includedContent").load("./party.html #output");
+                        };
                       </script>
                 </div>
                 <!-- Tab content for the fifth tab -->
