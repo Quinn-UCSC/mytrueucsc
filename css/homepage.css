@@ -153,12 +153,14 @@ ul li:hover {
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px; 
+    grid-gap: 10px;
   }
   
   .photo-grid img {
     width: 100%;
     height: auto;
+    border: gold;
+    padding: 10px;
   }
   
   .column img {
