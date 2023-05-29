@@ -103,7 +103,8 @@ img {
 .slideshow-container {
   position: relative;
   width: 50%;
-  padding-bottom: 40%;
+  padding-top: 1%;
+  padding-bottom: 35%;
   margin: 0 auto; /* Add this line to center the element horizontally */
 }
 
@@ -114,7 +115,7 @@ img {
 }
 
 .slide img {
-  max-width: 220px;
+  max-width: 200px;
   max-height: 160px;
 }
 
