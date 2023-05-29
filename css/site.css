@@ -17,16 +17,18 @@ img {
     width: 100%
 }
 
+/* Update the positioning of the banana slug */
 #banana-slug {
+  width: 1.5in;
   position: absolute;
-  top: -60;
   right: 0;
 }
 
+/* Set the width of the image */
 #banana-slug img {
-  width: 60%;
-  height: auto;
-} 
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
 
 /* Slideshow container */
 .image-slideshow {
@@ -52,11 +54,10 @@ img {
 /* Caption text for slideshow */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  bottom: 8px;
+  bottom: 24px;
   width: 100%;
   text-align: center;
 } 
@@ -97,5 +98,27 @@ img {
     border-color: transparent transparent transparent #fff;
     right: 0;
     margin-right: 20px;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 50%;
+  padding-bottom: 40%;
+  margin: 0 auto; /* Add this line to center the element horizontally */
+}
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  max-width: 220px;
+  max-height: 160px;
+}
+
+.slide.active {
+  opacity: 1;
 }
 

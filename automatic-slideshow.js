@@ -1,4 +1,4 @@
-// site.js - Automatic Slideshow Code
+// automatic-slideshow.js - Automatic Slideshow Code
 // Author: Michael Quinn
 // Date: 5/22/2023
 
