@@ -18,23 +18,24 @@ img {
 }
 
 #banana-slug {
-  float: right;
-  margin-left: 10px;
-  width: 1.5in;
+  position: absolute;
+  top: -60;
+  right: 0;
 }
 
 #banana-slug img {
-  width: 100%;
+  width: 60%;
   height: auto;
 } 
 
 /* Slideshow container */
 .image-slideshow {
-  width: 500px;
+  width: 50%;
+  margin: 0 auto; /* Centers the container horizontally */
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: center;
+  position: relative;
   }
 
 /* Set a fixed width for the image containers */
@@ -53,7 +54,7 @@ img {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: relative;
+  position: absolute;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   bottom: 8px;
   width: 100%;
