@@ -30,10 +30,22 @@ img {
 
 /* Slideshow container */
 .image-slideshow {
+  width: 500px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  position: relative;
+  }
+
+/* Set a fixed width for the image containers */
+  .image-fade {
+    width: 100%;
+  }
+  
+/* Set the width of the images to 100% of the container */
+  .img-slide {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
   }
 
 /* Caption text for slideshow */
