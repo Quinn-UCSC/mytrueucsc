@@ -136,6 +136,27 @@ ul li:hover {
     font-weight: bold;
   }
 
+  .text-column {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .column img {
+    width: 200px; /* Set the maximum width of the image */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    margin-right: 20px; /* Adjust the spacing between the image and description */
+  }
+
+  .separator {
+    display: inline-block;
+    width: 2px; /* Adjust the width of the separator line */
+    height: 50px; /* Adjust the height of the separator line */
+    background-color: #ccc; /* Adjust the color of the separator line */
+    margin-right: 20px; /* Adjust the spacing between the separator line and the title/description */
+  }
+
 /*In progress*/
 .inner-section-box {
     border: 5px solid gold;
@@ -162,19 +183,6 @@ ul li:hover {
     height: auto;
     border: gold;
     padding: 10px;
-  }
-  
-  .column img {
-    width: 200px; /* Set the maximum width of the image */
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
-    margin-right: 20px; /* Adjust the spacing between the image and description */
-  }
-
-  .separator {
-    width: 2px; /* Adjust the width of the separator line */
-    height: 50px; /* Adjust the height of the separator line */
-    background-color: #ccc; /* Adjust the color of the separator line */
-    margin-right: 20px; /* Adjust the spacing between the separator line and the title/description */
   }
 
   .description {
