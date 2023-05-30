@@ -143,6 +143,7 @@ ul li:hover {
     background-color: #0B3C6B;
     width: 600px;
     align-content: center;
+    margin: 0 auto; /* Add this line to center the element horizontally */
 }
 
 .inner-section-box img{
@@ -182,6 +183,7 @@ ul li:hover {
     text-align: justify;
     font-size: 16px; /* Set an initial font size */
     overflow: hidden; /* Hide overflowing text */
+    color: white;
   }
   
   .image-link {
