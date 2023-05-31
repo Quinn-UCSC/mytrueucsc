@@ -132,7 +132,7 @@
                 <!-- Tab content for the fourth tab -->
                 <div class="tab-pane" data-tabcontent="tab4">
                     <h1>UCSC Party Page</h1>
-                    <p><span class="italic">Please check out our UCSC party's page on Instagram.</span></p> <!-- Using font-style: italic for the paragraph introducing the instagram timeline. -->
+                    <p><span class="italic">Please check out the UCSC party's page on Instagram.</span></p> <!-- Using font-style: italic for the paragraph introducing the instagram timeline. -->
                     <!-- Creating a div to include content from party.html so that the page doesn't lag locally on the homepage whenever the programmers debug -->
                     <div id="includedContent"></div>
                     <!-- Creating script to load content from party.html -->
@@ -142,6 +142,22 @@
                             $("#includedContent").load("https://quinn-ucsc.github.io/mytrueucsc/party.html");
                         };
                       </script>
+                </div>
+                <!-- Tab content for the fifth tab -->
+                <div class="tab-pane" data-tabcontent="tab5">
+                    <h1>Join our Student Hub on Discord!</h1>
+                    <p class = "description" style = "text-align: center;">You can join our student hub discord by clicking the explore discord server button.</p>
+                    <img style = "width: 45%; display: block; margin: 0 auto;" src = "./img/step 1.JPG" alt = "Step 1 Image">
+                    <p class = "description" style = "text-align: center;">Then look for the student hub tab. Click it and press join hub!</p>
+                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 2.JPG" alt = "Step 2 Image">
+                    <p class = "description" style = "text-align: center;">Our next step is to type in your student email address.</p>
+                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 3.JPG" alt = "Step 3 Image">
+                    <p class = "description" style = "text-align: center;">Now, you should check your UCSC email for a verification code.</p>
+                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 4.JPG" alt = "Step 4 Image">
+                    <p class = "description" style = "text-align: center;">Finally, input your verification code and check out the discord servers available to join!</p>
+                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 5.JPG" alt = "Step 5 Image">
+                    <p class = "description" style = "text-align: center;">Please enjoy your selection of servers made by UCSC students!</p>
+                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 6.JPG" alt = "Step 6 Image">
                 </div>
                 <!-- Tab content for the sixth tab -->
                 <div class="tab-pane" data-tabcontent="tab6">
@@ -158,7 +174,7 @@
                     </div>
                     <!-- Third image container -->
                     <div class="slide">
-                        <img src="img/questionable-encounters.png" class="img-slide">
+                        <img src="img/printsale.png" class="img-slide">
                         <div class="text">UCSC Print Sale 2023</div>
                     </div>
                     </div>
@@ -179,7 +195,24 @@
                 <div class="tab-pane" data-tabcontent="tab7">
                     <h1>Rank YOUR professors.</h1>
                     <p>Here is a discussion regarding professors and potential recommendations UCSC students have.</p>
-                </p> Here is a link to the Website Rate My Professors for UCSC: <link rel="stylesheet" href="https://www.ratemyprofessors.com/school/1078"></p>
+                    <p> Here is a link to the Website Rate My Professors for UCSC: <a href="https://www.ratemyprofessors.com/search/professors/1078?q=*">Link</a></p>
+                    <div class="text-column" style = "float: left;">
+                        <!-- Left-side header -->
+                        <h1 style = "margin: 10px 30px;">S</h1>
+                        <h1 style = "margin: 10px 30px;">A</h1>
+                        <h1 style = "margin: 10px 30px;">B</h1>
+                        <h1 style = "margin: 10px 30px;">C</h1>
+                        <h1 style = "margin: 10px 30px;">F</h1>
+                      </div>
+                      <div class="separator" style = "height: 160px; position: absolute;"></div>
+                      <div class="text-column" style = "float: right;">
+                        <!-- Right-side header -->
+                        <h1 style = "margin: 10px 0;">Wes Modes</h1>
+                        <h1 style = "margin: 10px 0;">Professor 2</h1>
+                        <h1 style = "margin: 10px 0;">Professor 3</h1>
+                        <h1 style = "margin: 10px 0;">Professor 4</h1>
+                        <h1 style = "margin: 10px 0;">Professor 5</h1>
+                      </div>
                 </div>
                 <!-- Tab content for the eighth tab --> 
                 <div class="tab-pane" data-tabcontent="tab8">
@@ -238,14 +271,6 @@
         </div>
         </section>
     </section>
-        <br>
-        <!-- A section with buttons in a div named "pages" -->
-        <div class="pages">
-            <button id="slug-meet">Slug Meet</button>
-            <button id="concert">Concerts</button>
-            <button id="clubs">Clubs and Events</button>
-            <button id="parties">Party Forums/Ads</button>
-        </div>
     </div>  
 </body>
 </html>

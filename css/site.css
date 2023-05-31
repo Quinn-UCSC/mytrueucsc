@@ -14,7 +14,7 @@
 /* Align images vertically in the middle */
 img {
     vertical-align: middle;
-    width: 100%
+    width: 95%;
 }
 
 /* Update the positioning of the banana slug */
@@ -103,7 +103,8 @@ img {
 .slideshow-container {
   position: relative;
   width: 50%;
-  padding-bottom: 40%;
+  padding-top: 1%;
+  padding-bottom: 19%;
   margin: 0 auto; /* Add this line to center the element horizontally */
 }
 
@@ -114,7 +115,7 @@ img {
 }
 
 .slide img {
-  max-width: 220px;
+  max-width: 200px;
   max-height: 160px;
 }
 
