@@ -3,7 +3,7 @@ body {
     display: block;
     border: 10px blue;
     border-width: medium;
-    background-image:linear-gradient(gold, #0B3C6B, #0B3C6B, gold, gold);
+    background-image:linear-gradient(gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
     padding: 10px;
 }
 
