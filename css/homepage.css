@@ -3,12 +3,12 @@ body {
     display: block;
     border: 10px blue;
     border-width: medium;
-    background-image: linear-gradient(to bottom right, rgb(158, 168, 244), rgb(233, 233, 170));
+    background-image:linear-gradient(gold, #0B3C6B, #0B3C6B, gold, gold);
     padding: 10px;
 }
 
 .logo {
-    width: 1in;
+    width: 4in;
   }
 
 .welcome-sign {
@@ -83,7 +83,7 @@ ul li:hover {
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
-    background-image: conic-gradient(#0B3C6B, #0B3C6B, gold, #0B3C6B);
+    background-image:linear-gradient(#0B3C6B,#0B3C6B);
 }
 
 .tab-content {
@@ -92,7 +92,7 @@ ul li:hover {
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
-    background-image: conic-gradient(#0B3C6B, gold, #0B3C6B, #0B3C6B);
+    background-image:linear-gradient(#0B3C6B,#0B3C6B);
 }
 
 .pages {

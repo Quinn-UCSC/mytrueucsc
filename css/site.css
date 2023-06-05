@@ -17,7 +17,7 @@ img {
     width: 95%;
 }
 
-/* Update the positioning of the banana slug */
+/* Update the positioning of the banana slugs */
 #banana-slug {
   width: 1.5in;
   position: absolute;
@@ -26,6 +26,16 @@ img {
 
 /* Set the width of the image */
 #banana-slug img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+#banana-slug2 {
+  width: 1.5in;
+  position: absolute;
+ left: 0;
+}
+#banana-slug2 img {
   width: 100%;
   height: auto; /* Maintain aspect ratio */
 }
