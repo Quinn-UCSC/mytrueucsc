@@ -13,7 +13,7 @@ $.ajax({
         var housePlaylist = data.items[3];
         console.log(housePlaylist);
         // Replaces div id output with an iframe that uses the id data of the playlist as the youtube id url
-        $("#output").html("<iframe width='1000' height='500' class='yt-frame' src='https://www.youtube.com/playlist?list="+housePlaylist.id+"'>");
+        $("#output").append("<iframe width='500' height='300' class='yt-frame' src='https://www.youtube.com/playlist?list="+housePlaylist.id+"'>");
     },
     // Check to see if there is an error in API
     error: function (jqXHR, textStatus, errorThrown) {
