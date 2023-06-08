@@ -17,12 +17,14 @@
 <!-- load jQuery library to make javascript easier (must be above our lab js)-->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+<!-- Link to javascript file for automated slideshow - DEFER waits until all elements are rendered -->
 <script src="automatic-slideshow.js">defer</script>
-<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+<!-- Link to javascript file for consistent slideshow - DEFER waits until all elements are rendered -->
 <script src="consistent-slideshow.js">defer</script>
-<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+<!-- Link to javascript file for page select - DEFER waits until all elements are rendered -->
 <script src="page.js">defer</script>
+<!-- Link to javascript file for youtube api - DEFER waits until all elements are rendered -->
+<script src="youtube-api.js">defer</script>
 </head>
 <body>
     <!-- Start of container div -->
@@ -75,7 +77,11 @@
 
         <!-- HTML line break element. -->
         <br>
-
+        <div class="yt-panel">
+            <h2>UCSC Housing Youtube Playlist:</h2>
+            <div id="output"></div>
+        </div>
+        <br>
         <!-- Container for links -->
         <div class="links">
             <!-- Unordered list -->
@@ -266,7 +272,7 @@
          <!-- Section 2 --> 
         <section>
         <div class="news">
-            <h1>Insert News</h1>
+            <h1>Twitter News</h1>
             <!-- <a href = "./twitter-test/index.html">Click here for tweets</a> -->
             <!-- Showcases a twitter timeline consisting of UCSC accounts posting news about current UCSC events and clubs. -->
             <a class="twitter-timeline" data-width="500" data-height="500" data-dnt="true" data-theme="dark" 

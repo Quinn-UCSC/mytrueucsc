@@ -20,6 +20,20 @@ body {
     text-align: center;
 }
 
+.yt-panel {
+    border: 10px rgb(224, 170, 53) ridge;
+    border-radius: 15px;
+    background-color: #0B3C6B;
+    color: gold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.yt-frame {
+    border: 10px rgb(224, 170, 53) ridge;
+    border-radius: 15px;
+}
+
 .image-fade {
     border: 10px rgb(224, 170, 53) ridge;
     border-radius: 15px;
