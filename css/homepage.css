@@ -25,6 +25,7 @@ body {
     border-radius: 15px;
     background-color: #0B3C6B;
     color: gold;
+    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
     font-family: "Times New Roman", Times, serif;
     text-align: center;
 }
@@ -36,6 +37,7 @@ body {
 
 .image-fade {
     border: 10px rgb(224, 170, 53) ridge;
+    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, #0B3C6B, #0B3C6B, gold);
     border-radius: 15px;
     background-color: #0B3C6B;
 }
@@ -48,6 +50,7 @@ body {
 .img-slide {
     height: 400px;
     width: 300px;
+    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -66,6 +69,7 @@ body {
     border: 10px rgb(224, 170, 53) ridge;
     border-radius: 15px;
     background-color: #0B3C6B;
+    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
     color: gold;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
@@ -97,16 +101,16 @@ ul li:hover {
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
-    background-image:linear-gradient(#0B3C6B,#0B3C6B);
+    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
 }
 
 .tab-content {
     border: 10px rgb(224, 170, 53) ridge;
+    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
     border-radius: 15px;
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
-    background-image:linear-gradient(#0B3C6B,#0B3C6B);
 }
 
 .pages {
