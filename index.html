@@ -79,22 +79,7 @@
         <br>
         <div class="yt-panel">
             <h2>UCSC Housing Youtube Playlist:</h2>
-            <div id="output">
-                <div class="chatroom" style="float: right;">
-                    <script>
-                        var chatango = $('<script>');
-                        chatango.attr('type', 'text/javascript');
-                        chatango.attr('id', 'cid0020000347209431095');
-                        chatango.attr('data-cfasync', 'false');
-                        chatango.attr('async', true);
-                        chatango.attr('src', 'https://st.chatango.com/js/gz/emb.js');
-                        chatango.attr('style', 'width: 400px;height: 300px;');
-                        chatango.html('{"handle":"ucscstudents","arch":"js","styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","p":"10","q":"0084ef","r":100,"fwtickm":1}}');
-        
-                        $(".chatroom").append(chatango);
-                    </script>
-                </div>
-            </div>
+            <div id="output"></div>
         </div>        
         <br>
         <!-- Container for links -->
@@ -105,7 +90,7 @@
                 <li class="tab" data-tab="tab2">Club Events</li>
                 <li class="tab" data-tab="tab3">Concerts</li>
                 <li class="tab" data-tab="tab4">Parties</li>
-                <li class="tab" data-tab="tab5">Discord</li>
+                <li class="tab" data-tab="tab5">Chatbox</li>
                 <li class="tab" data-tab="tab6">Student Art</li>
                 <li class="tab" data-tab="tab7">Professor Ranks</li>
                 <li class="tab" data-tab="tab8">External Links</li>
@@ -123,7 +108,7 @@
                     <p class = "description">Welcome To MyTrueUCSC. Our website is a vibrant online platform dedicated to fostering connections and keeping you up-to-date with the latest happenings in the UCSC student community.
                         By students, for students, our website's mission is to create a stronger, more united student body. This site is a group effort made by a group of 6 students for ART101 with 
                         Wes Modes in the spring of 2023. Navigation in this site is as easy as the click of a button, literally! Links are made easy and accessible by the strip listing "Club Events,
-                        Concerts, Parties, Discord, Student Art, Professor Ranks, External Links" below the automatic slideshow. You can also access the latest UCSC Club news through the embedded 
+                        Concerts, Parties, Chatbox, Student Art, Professor Ranks, External Links" below the automatic slideshow. You can also access the latest UCSC Club news through the embedded 
                         Twitter section on the homepage.</p>
                     <img src="img/welcomeslug.png">
                 </div>
@@ -170,8 +155,8 @@
                 </div>
                 <!-- Tab content for the fifth tab -->
                 <div class="tab-pane" data-tabcontent="tab5">
-                    <h1>Join our Student Hub on Discord!</h1>
-                    <p class = "description" style = "text-align: center;">You can join our student hub discord by clicking the explore discord server button.</p>
+                    <h1>Join the live UCSC chat!</h1>
+                    <!-- <p class = "description" style = "text-align: center;">You can join our student hub discord by clicking the explore discord server button.</p>
                     <img style = "width: 45%; display: block; margin: 0 auto;" src = "./img/step 1.JPG" alt = "Step 1 Image">
                     <p class = "description" style = "text-align: center;">Then look for the student hub tab. Click it and press join hub!</p>
                     <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 2.JPG" alt = "Step 2 Image">
@@ -182,7 +167,21 @@
                     <p class = "description" style = "text-align: center;">Finally, input your verification code and check out the discord servers available to join!</p>
                     <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 5.JPG" alt = "Step 5 Image">
                     <p class = "description" style = "text-align: center;">Please enjoy your selection of servers made by UCSC students!</p>
-                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 6.JPG" alt = "Step 6 Image">
+                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 6.JPG" alt = "Step 6 Image"> -->
+                    <div class="chatroom">
+                        <script>
+                            var chatango = $('<script>');
+                            chatango.attr('type', 'text/javascript');
+                            chatango.attr('id', 'cid0020000347209431095');
+                            chatango.attr('data-cfasync', 'false');
+                            chatango.attr('async', true);
+                            chatango.attr('src', 'https://st.chatango.com/js/gz/emb.js');
+                            chatango.attr('style', 'width: 400px;height: 300px;');
+                            chatango.html('{"handle":"ucscstudents","arch":"js","styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","p":"10","q":"0084ef","r":100,"fwtickm":1}}');
+            
+                            $(".chatroom").append(chatango);
+                        </script>
+                    </div>
                 </div>
                 <!-- Tab content for the sixth tab -->
                 <div class="tab-pane" data-tabcontent="tab6">
