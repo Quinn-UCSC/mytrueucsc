@@ -21,11 +21,7 @@ body {
 }
 
 .yt-panel {
-    border: 10px rgb(224, 170, 53) ridge;
-    border-radius: 15px;
-    background-color: #0B3C6B;
     color: gold;
-    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
     font-family: "Times New Roman", Times, serif;
     text-align: center;
 }
@@ -58,7 +54,6 @@ body {
 
 .text {
     background-color: #80808075;
-    margin-bottom: 3%;
     width: 100%;
     font-size: 25px;
     color: gold;
@@ -200,6 +195,29 @@ ul li:hover {
     width: 100%;
     height: auto;
     padding: 10px;
+  }
+
+  /* Update the positioning of the banana slugs */
+  #banana-slug {
+    width: 1.5in;
+    position: absolute;
+    right: 0;
+  }
+
+  /* Set the width of the image */
+  #banana-slug img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #banana-slug2 {
+    width: 1.5in;
+    position: absolute;
+  left: 0;
+  }
+  #banana-slug2 img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
   }
 
   .description {
