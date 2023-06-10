@@ -214,3 +214,27 @@ ul li:hover {
   .image-link {
     display: inline-block; /* Ensures the link takes up only as much space as the image */
 }
+
+/* CSS for the news container */
+  #news-container {
+    overflow: hidden; /* Hides any content that overflows the container */
+  }
+  
+/* CSS for the news header */
+  #news-header {
+    color: white;
+    padding-top: -10px;
+    padding-bottom: 10px;
+    width: 100%; /* Sets the width of the news header to 100% */
+  }
+  
+/* CSS for the news items */
+  .news-item {
+    margin-right: 120px; /* Adds a right margin of 120px to create spacing between news items */
+  }
+  
+/* CSS for the notifications */
+  .notification {
+    margin-right: 10px; /* Adds a right margin of 10px to create spacing between notifications */
+  }
+  

@@ -25,6 +25,8 @@
 <script src="page.js">defer</script>
 <!-- Link to javascript file for youtube api - DEFER waits until all elements are rendered -->
 <script src="youtube-api.js">defer</script>
+<!-- Link to javascript file for displaying news - DEFER waits until all elements are rendered -->
+<script src="displaynews.js">defer</script>
 </head>
 <body>
     <!-- Start of container div -->
@@ -58,7 +60,8 @@
             <div id="arrow-left" class="arrow"></div>
             <!-- First image container -->
             <div class="image-fade">
-                <img src="img/playfaire.png" class="img-slide">
+                <!-- I changed the style = width to better fit this image. Please remove the width value once the Playfaire is over and the poster is switched. -->
+                <img src="img/ARTG-80I Posters.jpg" class="img-slide" style = "width: 550px"> 
                 <div class="text">ARTG 80I Night Market</div>
             </div>        
             <!-- Second image container -->
@@ -73,7 +76,7 @@
             </div> 
             <!-- Right arrow div -->
             <div id="arrow-right" class="arrow"></div>
-        </div>
+        </div>    
 
         <!-- HTML line break element. -->
         <br>
@@ -95,6 +98,10 @@
                 <li class="tab" data-tab="tab7">Professor Ranks</li>
                 <li class="tab" data-tab="tab8">External Links</li>
             </ul>
+            <!-- Scrolling News Header for headlines. -->
+        <div id="news-container">
+            <marquee id="news-header" behavior="scroll" direction="left"></marquee>
+          </div>      
         </div>
         <!-- HTML line break element. -->
         <br>
@@ -156,18 +163,7 @@
                 <!-- Tab content for the fifth tab -->
                 <div class="tab-pane" data-tabcontent="tab5">
                     <h1>Join the live UCSC chat!</h1>
-                    <!-- <p class = "description" style = "text-align: center;">You can join our student hub discord by clicking the explore discord server button.</p>
-                    <img style = "width: 45%; display: block; margin: 0 auto;" src = "./img/step 1.JPG" alt = "Step 1 Image">
-                    <p class = "description" style = "text-align: center;">Then look for the student hub tab. Click it and press join hub!</p>
-                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 2.JPG" alt = "Step 2 Image">
-                    <p class = "description" style = "text-align: center;">Our next step is to type in your student email address.</p>
-                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 3.JPG" alt = "Step 3 Image">
-                    <p class = "description" style = "text-align: center;">Now, you should check your UCSC email for a verification code.</p>
-                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 4.JPG" alt = "Step 4 Image">
-                    <p class = "description" style = "text-align: center;">Finally, input your verification code and check out the discord servers available to join!</p>
-                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 5.JPG" alt = "Step 5 Image">
-                    <p class = "description" style = "text-align: center;">Please enjoy your selection of servers made by UCSC students!</p>
-                    <img style = "width: 75%; display: block; margin: 0 auto;" src = "./img/step 6.JPG" alt = "Step 6 Image"> -->
+                    <!-- HTML Code for the Chatango Chatroom -->
                     <div class="chatroom">
                         <script>
                             var chatango = $('<script>');
@@ -176,7 +172,7 @@
                             chatango.attr('data-cfasync', 'false');
                             chatango.attr('async', true);
                             chatango.attr('src', 'https://st.chatango.com/js/gz/emb.js');
-                            chatango.attr('style', 'width: 400px;height: 300px;');
+                            chatango.attr('style', 'width: 400px;height: 500px;');
                             chatango.html('{"handle":"ucscstudents","arch":"js","styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","p":"10","q":"0084ef","r":100,"fwtickm":1}}');
             
                             $(".chatroom").append(chatango);
