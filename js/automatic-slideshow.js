@@ -15,6 +15,9 @@ $(document).ready(function() {
 
     // Set the current image index to 0
     var currentIndex = 0;
+
+    // Variable to store the setInterval reference
+    var slideshowInterval;
   
     // Hide all image containers except the first one
   imageContainers.not(":first").hide();
@@ -45,26 +48,35 @@ $(document).ready(function() {
 
   // Event listener for clicking on the right arrow
   $("#arrow-right").click(function() {
+    // Clear the setInterval to pause the automatic slideshow
+    clearInterval(slideshowInterval); 
     showNextImage();
+    // Restart the automatic slideshow
+    startSlideshow();
   });
 
   // Event listener for clicking on the left arrow
   $("#arrow-left").click(function() {
+    // Clear the setInterval to pause the automatic slideshow
+    clearInterval(slideshowInterval); 
     showPreviousImage();
+    // Restart the automatic slideshow
+    startSlideshow();
   });
   
-    // Start the slideshow
-    setInterval(function() {
+  function startSlideshow() {
+    slideshowInterval = setInterval(function() {
       // Find the currently visible image container
-      var currentContainer = slideshow.find(".image-fade:visible");
-  
+        var currentContainer = slideshow.find(".image-fade:visible"); 
       // Hide the current image container
-      currentContainer.hide();
-  
-      // Get the next image container or loop back to the first container if the last container is reached
-      var nextContainer = currentContainer.next(".image-fade").length ? currentContainer.next(".image-fade") : imageContainers.first();
-  
+        currentContainer.hide(); 
+      // Get the next image container or loop back to the first one
+        var nextContainer = currentContainer.next(".image-fade").length ? currentContainer.next(".image-fade") : imageContainers.first();
       // Show the next image container
-      nextContainer.show();
+        nextContainer.show(); 
     }, intervalDuration);
-  });
+  }
+
+// Start the slideshow initially
+  startSlideshow();
+});
