@@ -7,18 +7,52 @@ body {
     padding: 10px;
 }
 
-.logo {
-    width: 4in;
+button {
+    border: none;
+    width: 5in;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    margin: .1in;
+    padding: .1in;
+  }  
+
+  .welcome-sign img {
+    margin-right: 0.5in;
+    margin-left: 0.5in;
+    height: 1in;
+    width: auto;
   }
 
-.welcome-sign {
-    border: 10px rgb(224, 170, 53) ridge;
+
+  .welcome-sign:hover .spin-on-hover {
+    animation: spin 1s linear; /* Apply the spin animation on hover */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Starting point, no rotation */
+    }
+    100% {
+      transform: rotate(360deg); /* End point, full rotation */
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .welcome-sign {
+    display: flex;
+    align-items: center;
+    border: 10px ridge rgb(224, 170, 53);
     border-radius: 15px;
     background-color: #0B3C6B;
     color: gold;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
-}
+  }
 
 .yt-panel {
     color: gold;
@@ -33,7 +67,7 @@ body {
 
 .image-fade {
     border: 10px rgb(224, 170, 53) ridge;
-    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, #0B3C6B, #0B3C6B, gold);
+    background-image: linear-gradient(to right, #062541, #0B3C6B, #0B3C6B, #0B3C6B, #0B3C6B, #0B3C6B, #062541);
     border-radius: 15px;
     background-color: #0B3C6B;
 }
@@ -46,7 +80,7 @@ body {
 .img-slide {
     height: 400px;
     width: 300px;
-    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
+    background-image: linear-gradient(to right, #062541, #0B3C6B, #0B3C6B, #0B3C6B, #062541);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +98,7 @@ body {
     border: 10px rgb(224, 170, 53) ridge;
     border-radius: 15px;
     background-color: #0B3C6B;
-    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
+    background-image: linear-gradient(to right, #062541, #0B3C6B, #0B3C6B, #0B3C6B, #062541);
     color: gold;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
@@ -96,12 +130,12 @@ ul li:hover {
     text-align: center;
     color: gold;
     font-family: "Times New Roman", Times, serif;
-    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
+    background-image: linear-gradient(to right, #062541, #0B3C6B, #0B3C6B, #0B3C6B, #062541);
 }
 
 .tab-content {
     border: 10px rgb(224, 170, 53) ridge;
-    background-image: linear-gradient(to right, gold, #0B3C6B, #0B3C6B, #0B3C6B, gold);
+    background-image: linear-gradient(to right, #062541, #0B3C6B, #0B3C6B, #0B3C6B, #062541);
     border-radius: 15px;
     text-align: center;
     color: gold;
@@ -111,7 +145,7 @@ ul li:hover {
 .pages {
     border: 10px rgb(224, 170, 53) ridge;
     border-radius: 15px;
-    background-image: linear-gradient(gold, #0B3C6B, #0B3C6B);
+    background-image: linear-gradient(#062541, #0B3C6B, #0B3C6B);
     text-align: center;
     padding: 40px;
     word-spacing: 20px;
