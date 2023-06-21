@@ -28,20 +28,20 @@ $(document).ready(function() {
         var currentItem = $(listItems[currentIndex]);
 
         // Extract the necessary information
-        var type = url + currentItem.find(".type").text().trim();
-        var link = url + currentItem.find("a").attr("href");
-        var image = url + currentItem.find("img").attr("src");
-        var title = url + currentItem.find("h2 a").text().trim();
-        var description = url + currentItem.find("p").text().trim();
+        var date = currentItem.find(".date").text().trim();
+        var link = url + currentItem.find("h3 a").attr("href");
+        var image = url + currentItem.find(".thumbnail").attr("src");
+        var title = currentItem.find("h3 a").text().trim();
+        var description = currentItem.find("p").text().trim();
 
         // Create the HTML for the item
         var itemHTML = "<div class='item'>" +
-          "<p>" + type + "</p>" +
+        	"<span style = 'text-align: right;'>" + date + "</span>" +
+        	"<h2>" + title + "</h2>" +
           "<a href='" + link + "'>" +
-          "<img src='" + image + "' alt='" + title + "'>" +
-          "<h2>" + title + "</h2>" +
-          "<p>" + description + "</p>" +
+          "<img src='" + image + "' alt='" + title + "' style = 'max-height: 50%; max-width: 50%;'>" +
           "</a>" +
+          "<p>" + description + "</p>" +
           "</div>";
 
         // Fade out the current item
