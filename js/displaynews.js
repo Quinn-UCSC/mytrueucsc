@@ -5,7 +5,8 @@
 // Assuming you have an array of news stored in the `newsArray` variable
 var newsArray = [
   "Did you know that you could join discord servers at the UCSC Discord Student Hub? Please check out the student hub tutorial <a href='studenthub.html'>here</a>!",
-  "Thank you for cominng to this year's ARTG-80I's Playfaire. I hope you had a good time!"
+  "Thank you for everyone who came to the Playfaire. Anyone who takes ARTG-80I next fall can start a new Playfaire for their final. I am looking forward to it.",
+  "Have a good summer everyone! Please take good care of yourselves!"
 ];
 
 function displayNews() {
