@@ -5,9 +5,22 @@
 $(document).ready(function() {
   var url = "https://news.ucsc.edu/";
 
-  // Make AJAX request
+// Set CORS headers
+     $.ajaxPrefilter(function(options) {
+     if (options.crossDomain && $.support.cors) {
+       options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+     }
+   });
+//  Set CORS headers from server side. (Unable to do on github pages since we don't own the server)
+//   $.ajaxSetup({
+//     beforeSend: function(xhr) {
+//       xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+//     }
+//   });
+
+// Make AJAX request to fetch news
   $.ajax({
-    url: "https://cors-anywhere.herokuapp.com/https://news.ucsc.edu/",
+    url: url,
     dataType: "html",
     success: function(data) {
       var html = $(data);
@@ -36,8 +49,8 @@ $(document).ready(function() {
 
         // Create the HTML for the item
         var itemHTML = "<div class='item' style = 'text-align: left;'>" +
-        	"<span style = 'padding-left: 15px;'>" + date + "</span>" +
-        	"<h2 style = 'font-size: 21px; text-align: center; overflow: hidden; text-overflow: ellipsis;'>" + title + "</h2>" +
+          "<span style = 'padding-left: 15px;'>" + date + "</span>" +
+          "<h2 style ='font-size: 21px; text-align: center; overflow: hidden; text-overflow: ellipsis;'>" + title + "</h2>" +
           "<div class='thumbnail-container'>" +
           "<a href='" + link + "'>" +
           "<img src='" + image + "' alt='" + title + "' class='thumbnail-image'>" +
