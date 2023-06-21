@@ -26,7 +26,7 @@ function displayNews() {
 
   // Restart the displayNews function once the news array is finished
   if (i === newsArray.length) {
-    setTimeout(displayNews, 45000); // Restart after a 45-second delay (adjust as needed)
+    setTimeout(displayNews, 50000); // Restart after a 50-second delay (adjust as needed)
   }
 }
 
