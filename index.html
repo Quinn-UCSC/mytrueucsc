@@ -234,10 +234,23 @@
                 <!-- Tab content for the ninth tab --> 
                 <div class="tab-pane" data-tabcontent="tab9">
                     <h1>Featured news from UCSC news site.</h1>
-                    <div class="slideshow">
-                        <p class="active"></p>
-                        
-                        </div>
+                    <div class="column"> <!-- Start of the column for item container -->
+                        <!-- Opening anchor tag to use image as a link-->
+                        <a href="https://news.ucsc.edu/" class="image-link">
+                            <img src="https://bpb-us-e1.wpmucdn.com/sites.ucsc.edu/dist/6/210/files/2015/06/ucsc-slug-logo.png" 
+                            alt="UCSC Slug Logo"> <!-- Image element with the image source and alt text -->
+                        </a> <!-- Closing anchor tag -->
+                        <div class="separator" style = "height: 50px;"></div> <!-- Vertical line separator -->
+                        <div> <!-- Start of the right-side content container -->
+                            <h2 style = "color: gold;">UCSC Newscenter</h2> <!-- Heading element for the title -->
+                            <p class = "description" style = "color: gold;"> We display the recent articles that are listed from the UCSC Newscenter website. 
+                                Please click on the article images for more information about the topic.</p> <!-- Paragraph element for the description -->
+                        </div> <!-- End of the right-side content container -->
+                    </div> <!-- End of the column container -->
+
+                    <!-- Slideshow for the listed items inside the content-box class from the website: https://news.ucsc.edu/ -->
+                    <div class="slideshow" style = "position: relative; width: 100%; height: 100%; overflow: hidden; padding: 20px;">
+                    </div>
                 </div>
                 <!-- Tab content for the tenth tab --> 
                 <div class="tab-pane" data-tabcontent="tab10">

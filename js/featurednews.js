@@ -30,18 +30,20 @@ $(document).ready(function() {
         // Extract the necessary information
         var date = currentItem.find(".date").text().trim();
         var link = url + currentItem.find("h3 a").attr("href");
-        var image = url + currentItem.find(".thumbnail").attr("src");
+        var image = url + currentItem.find("a img").attr("src");
         var title = currentItem.find("h3 a").text().trim();
         var description = currentItem.find("p").text().trim();
 
         // Create the HTML for the item
-        var itemHTML = "<div class='item'>" +
-        	"<span style = 'text-align: right;'>" + date + "</span>" +
-        	"<h2>" + title + "</h2>" +
+        var itemHTML = "<div class='item' style = 'text-align: left;'>" +
+        	"<span style = 'padding-left: 15px;'>" + date + "</span>" +
+        	"<h2 style = 'font-size: 21px; text-align: center; overflow: hidden; text-overflow: ellipsis;'>" + title + "</h2>" +
+          "<div class='thumbnail-container'>" +
           "<a href='" + link + "'>" +
-          "<img src='" + image + "' alt='" + title + "' style = 'max-height: 50%; max-width: 50%;'>" +
+          "<img src='" + image + "' alt='" + title + "' class='thumbnail-image'>" +
           "</a>" +
-          "<p>" + description + "</p>" +
+          "</div>" +
+          "<span class = 'description' style = 'color: gold;'>" + description + "</span>" +
           "</div>";
 
         // Fade out the current item
@@ -56,8 +58,8 @@ $(document).ready(function() {
         // Increment the index or reset to 0 if reached the end
         currentIndex = (currentIndex + 1) % listItems.length;
 
-        // Call the displayItem function again after 10 seconds
-        setTimeout(displayItem, 10000);
+        // Call the displayItem function again after 20 seconds
+        setTimeout(displayItem, 20000);
       }
     },
     error: function(xhr, textStatus, errorThrown) {
