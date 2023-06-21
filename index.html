@@ -156,16 +156,16 @@
                     <!-- HTML Code for the Chatango Chatroom -->
                     <div class="chatroom">
                         <script>
-                            var chatango = $('<script>');
-                            chatango.attr('type', 'text/javascript');
-                            chatango.attr('id', 'cid0020000347209431095');
-                            chatango.attr('data-cfasync', 'false');
-                            chatango.attr('async', true);
-                            chatango.attr('src', 'https://st.chatango.com/js/gz/emb.js');
-                            chatango.attr('style', 'width: 400px;height: 500px;');
-                            chatango.html('{"handle":"ucscstudents","arch":"js","styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","p":"10","q":"0084ef","r":100,"fwtickm":1}}');
-            
-                            $(".chatroom").append(chatango);
+                            var chatango = $('<script>');  // Create a new <script> element and store it in the variable 'chatango'
+                            chatango.attr('type', 'text/javascript');  // Set the 'type' attribute of the <script> element to 'text/javascript'
+                            chatango.attr('id', 'cid0020000348381310609');  // Set the 'id' attribute of the <script> element to 'cid0020000348381310609'
+                            chatango.attr('data-cfasync', 'false');  // Set the 'data-cfasync' attribute of the <script> element to 'false'
+                            chatango.attr('async', true);  // Set the 'async' attribute of the <script> element to 'true'
+                            chatango.attr('src', 'https://st.chatango.com/js/gz/emb.js');  // Set the 'src' attribute of the <script> element to 'https://st.chatango.com/js/gz/emb.js'
+                            chatango.attr('style', 'width: 400px;height: 500px;');  // Set the 'style' attribute of the <script> element to 'width: 400px;height: 500px;'
+                            chatango.html('{"handle":"ucscstudents","arch":"js","styles":{"a":"0084ef","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","p":"10","q":"0084ef","r":100,"fwtickm":1}}');  // Set the HTML content of the <script> element to a JSON string specifying chatroom settings
+                            $(".chatroom").append(chatango);  // Append the <script> element to the HTML element with class "chatroom"
+
                         </script>
                     </div>
                 </div>
