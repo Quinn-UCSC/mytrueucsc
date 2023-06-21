@@ -27,6 +27,8 @@
 <script src="js/youtube-api.js">defer</script>
 <!-- Link to javascript file for displaying news - DEFER waits until all elements are rendered -->
 <script src="js/displaynews.js">defer</script>
+<!-- Link to javascript file for displaying content from another html file -->
+<script src="js/includedContent.js"></script>
 </head>
 <body>
     <!-- Start of container div -->
@@ -142,15 +144,8 @@
                 <div class="tab-pane" data-tabcontent="tab4">
                     <h1>UCSC Party Page</h1>
                     <p><span class="italic">Please check out the UCSC party's page on Instagram.</span></p> <!-- Using font-style: italic for the paragraph introducing the instagram timeline. -->
-                    <!-- Creating a div to include content from party.html so that the page doesn't lag locally on the homepage whenever the programmers debug -->
-                    <div id="includedContent1"></div>
-                    <!-- Creating script to load content from ucsc_party_instagram_embed.html -->
-                    <script>
-                        // Use window.onload event
-                        window.onload = function() {
-                            $("#includedContent1").load("https://quinn-ucsc.github.io/mytrueucsc/ucsc_party_instagram_embed.html");
-                        };
-                      </script>
+                    <!-- Creating a div to include content from ucsc_party_instagram_embed.html so that the page doesn't lag locally on the homepage whenever the programmers debug -->
+                    <div id ="includedContent1"></div>
                 </div>
                 <!-- Tab content for the fifth tab -->
                 <div class="tab-pane" data-tabcontent="tab5">
@@ -183,16 +178,7 @@
                 </div>
                 <!-- Tab content for the seventh tab -->  
                 <div class="tab-pane" data-tabcontent="tab7">
-                    <div>
-                    <h1>Student Art:</h1>
-                    <p class="description">UCSC is a campus filled with many artists.
-                        As a community UCSC hosts many events to share and experience different artistic talents. 
-                        Please see the current art events below that are happening on campus.</p>
-                    <p class="description"> Guggenheim Fellowship in photography awarded to Art Alum Klea McKenna. Exhibitions starting from
-                        Wednesday, June 7, 2023 - 12:00pm to Friday, June 30, 2023 - 12:00pm.
-                        </p>
-                    </div>
-                    <div class="slideshow-container">
+                    <div class="slideshow-container" style = "float: right;">
                         <!-- First image container -->
                         <div class="slide">
                             <a href="https://art.ucsc.edu/news/guggenheim-fellowship-photography-awarded-art-alum-klea-mckenna">
@@ -207,15 +193,18 @@
                         <!-- <div class="slide">
                         </div> -->
                 </div>
-                <div id="includedContent2"></div>
-                    <!-- Creating script to load content from student_art_instagram_embed.html -->
-                    <script>
-                        // Use window.onload event
-                        window.onload = function() {
-                            $("#includedContent2").load("https://quinn-ucsc.github.io/mytrueucsc/student_art_instagram_embed.html");
-                        };
-                      </script>
-                </div>
+                    <div>
+                    <h1>Student Art:</h1>
+                    <p class="description">UCSC is a campus filled with many artists.
+                        As a community UCSC hosts many events to share and experience different artistic talents. 
+                        Please see the current art events on the right that are happening on the UCSC campus.</p>
+                    <p class="description"> Guggenheim Fellowship in photography awarded to Art Alum Klea McKenna. Exhibitions starting from
+                        Wednesday, June 7, 2023 - 12:00pm to Friday, June 30, 2023 - 12:00pm.
+                        </p>
+                    </div>
+                    <!-- Creating a div to include content from student_art_instagram_embed.html so that the page doesn't lag locally on the homepage whenever the programmers debug -->
+                    <div id ="includedContent2"></div>
+            </div>
                 <!-- Tab content for the eighth tab -->    
                 <div class="tab-pane" data-tabcontent="tab8">
                     <h1>Rank YOUR professors.</h1>

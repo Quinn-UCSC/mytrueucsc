@@ -91,8 +91,9 @@ img {
   position: relative;
   width: 50%;
   padding-top: 1%;
-  padding-bottom: 19%;
+  padding-bottom: 30%;
   margin: 0 auto; /* Add this line to center the element horizontally */
+  max-width: 40%;
 }
 
 .slide {
