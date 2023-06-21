@@ -29,6 +29,8 @@
 <script src="js/displaynews.js">defer</script>
 <!-- Link to javascript file for displaying content from another html file -->
 <script src="js/includedContent.js"></script>
+<!-- Link to javascript file for displaying content from the https://news.ucsc.edu/ website -->
+<script src="js/featurednews.js"></script>
 </head>
 <body>
     <!-- Start of container div -->
@@ -94,7 +96,8 @@
                 <li class="tab" data-tab="tab6">Housing</li>
                 <li class="tab" data-tab="tab7">Student Art</li>
                 <li class="tab" data-tab="tab8">Professor Ranks</li>
-                <li class="tab" data-tab="tab9">External Links</li>
+                <li class="tab" data-tab="tab9">Featured News</li>
+                <li class="tab" data-tab="tab10">External Links</li>
             </ul>
             <!-- Scrolling News Header for headlines. -->
         <div id="news-container">
@@ -230,6 +233,14 @@
                 </div>
                 <!-- Tab content for the ninth tab --> 
                 <div class="tab-pane" data-tabcontent="tab9">
+                    <h1>Featured news from UCSC news site.</h1>
+                    <div class="slideshow">
+                        <p class="active"></p>
+                        
+                        </div>
+                </div>
+                <!-- Tab content for the tenth tab --> 
+                <div class="tab-pane" data-tabcontent="tab10">
                     <h1>External Links:</h1>
                     <div class="column"> <!-- Start of the column for item #1 container -->
                         <!-- Item #1 -->
